@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Mohammad Esmaeilzadeh - bugless.ir@yahoo.com">
+<meta name="contact" content="bugless.ir@yahoo.com">
+<meta name="github" content="https://github.com/buglessir/javascript-puzzle-game">
+<title>JavaScript Puzzle Game</title>
+<link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+<main class="main">
+  <div class="container">
+
+    <!-- Game Intro -->
+    <div class="game-intro text-center">
+      <h1 class="title">JavaScript Puzzle Game</h1>
+      <p class="text">You have <strong>5</strong> seconds to remember cards and then find the similars</p>
+      <div class="buttons">
+        <a href="javascript: game.startGame()" class="btn">Start Game</a>
+        <a href="https://github.com/buglessir/javascript-puzzle-game" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Game Started -->
+    <div class="game-board text-center none">
+      <h1 class="title" id="remember-title">Remember the similar items <span id="remember-timer"></span></h1>
+      <h1 class="title none" id="started-title">Find the similar items ;-)</h1>
+      <div class="game-items"></div>
+    </div>
+
+    <!-- Game Finished -->
+    <div class="game-finished text-center none">
+      <h1 class="title">You won ;-)</h1>
+      <div class="buttons">
+        <a href="javascript: game.startGame()" class="btn">Play Again</a>
+        <a href="https://github.com/buglessir/javascript-puzzle-game" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+</html>
